@@ -1,0 +1,164 @@
+/* 자주,반복적으로 사용되는 CSS */
+.center {
+    max-width: 150rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+.flex_fixing01 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex_fixing02 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.flex_fixing03 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* snb영역 */
+
+#header {border-bottom: 1px solid #ddd;}
+
+.snbWrap {
+    /* border: 1px solid red; */
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 1.6rem;
+}
+
+.snbLeft {width: 38rem;}
+.snbLeft a {}
+.snbLeft a span {position: relative;}
+.snbLeft a span:hover {color: #2245c7;}
+.snbLeft a span::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 122%;
+    transform: translateX(-50%);
+    width: 3px;
+    height: 3px;
+    background-color: #ddd;
+}
+
+.snbLeft a:last-child span::after {display: none;}
+
+.snbRight {width: auto;/*  background-color: rgb(255, 255, 220); */}
+
+.snbRight > div {
+    /* border: 1px solid red;  */
+    padding: 0 2rem;
+    position: relative;
+}
+
+/* 삼각단추 */
+.snbRight > div > a > span::after {
+    content: "";
+    position: absolute; top: 50%; right: 7px; transform: translateY(-50%);
+    width: 9px; height: 5px;
+    background: url(../images/triangleBTN.png) no-repeat;
+    cursor: pointer;
+}
+.snbRight div:nth-child(odd) a span::after{display: none;} 
+.weather {
+    width: 12rem;
+    text-align: right;
+}
+.weather a{
+    width: 100%; height: 100%;
+}
+.weather a span{
+    display: inline-block;
+    position: relative;
+    width: 100%; height: 100%;
+}
+.weather a span::before {
+    /* border: 1px solid red; */
+    content: "";
+    position: absolute; top: 0.8rem; left: 0.5rem;
+    width: 36px; height: 28px;
+    background: url(../images/weather.png) no-repeat;
+}
+.language {
+    width: 12rem;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+.language a{
+    width: 100%; height: 100%;
+}
+.language a span{
+    display: inline-block;
+    position: relative;
+    width: 100%; height: 100%;
+}
+.language>a>span::before {
+    content: "";
+    position: absolute; 
+    top: 50%; left: 0; transform: translateY(-50%);
+    width: 18px; height: 18px;
+    background: url(../images/language.png) no-repeat;
+}
+
+/* bar */
+.snbRight>div::after{
+    content: "";
+    position: absolute; top: 50%; right: 0; transform: translateY(-50%);
+    width: 1px; height: 14px; background-color: #ddd;
+}
+.snbRight>div:last-child::after{display: none;} 
+
+.snsWrap {}
+.snsGroup{
+    width: 15rem; height: 5rem;
+    padding: 1rem 0;
+}
+.snsGroup li{}
+.snsGroup>li>a{
+    width: 30px; height: 30px; 
+    background: url(../images/sns.png) no-repeat; 
+    text-indent: -9999px;
+    /* border: 1px solid black; */
+}
+.snsGroup li:first-child a{}
+.snsGroup li:nth-child(2) a{background-position: -30px 0;}
+.snsGroup li:nth-child(3) a{background-position: -60px 0;}
+.snsGroup li:nth-child(4) a{background-position: -90px 0;}
+.snsGroup li:last-child a{background-position: -120px 0;}
+.homepage {width: 15rem;}
+.homepage a{
+    width: 100%; height: 100%;
+}
+.homepage a span{
+    display: inline-block;
+    position: relative;
+    width: 100%; height: 100%;
+}
+
+.lang_list{
+    /* display: none; */
+    height: 0; overflow: hidden; transition: height 0.5s ease;
+    border: 0.01rem solid #ddd;
+    background-color: #fff;
+}
+.lang_list a{}
+.lang_list a:hover{
+    background-color: #ddf1fc;
+}
+.lang_list a span{}
+
+.hp_list{
+    /* display: none; */
+    height: 0; overflow: hidden; transition: height 0.5s;
+    border: 0.01rem solid #ddd; background-color: #fff; 
+    font-size: 1.3rem; text-align: center;
+}
+.hp_list li{}
+.hp_list li a{}
+.hp_list li a:hover{background-color: #ddf1fc;}
+.hp_list li a span{}
