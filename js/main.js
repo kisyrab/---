@@ -25,3 +25,17 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
+
+//탭메뉴
+$(function() {
+    $('.sub_group').hide();
+    $('.mainMenu > li').on('mouseenter', function() {
+        // 마우스가 메뉴에 들어갔을 때 슬라이드 다운
+        $(this).find('.sub_group').stop().slideDown(300)/* .fadeIn(300) */;
+    });
+
+    $('.mainMenu > li').on('mouseleave', function() {
+        // 마우스가 메뉴 영역을 벗어났을 때 슬라이드 업
+        $(this).find('.sub_group').stop().slideUp(300)/* .fadeOut(300) */;
+    });
+});

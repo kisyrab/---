@@ -20,6 +20,9 @@
     justify-content: flex-start;
 }
 
+/* .bodyPad{padding: 0 10rem;} */
+
+
 /* snb영역 */
 
 #header {border-bottom: 1px solid #ddd;}
@@ -48,7 +51,9 @@
 
 .snbLeft a:last-child span::after {display: none;}
 
-.snbRight {width: auto;/*  background-color: rgb(255, 255, 220); */}
+.snbRight {width: auto;/*  background-color: rgb(255, 255, 220); */
+    z-index: 100;
+}
 
 .snbRight > div {
     /* border: 1px solid red;  */
@@ -141,6 +146,7 @@
 }
 
 .lang_list{
+    z-index: 1000;
     /* display: none; */
     height: 0; overflow: hidden; transition: height 0.5s ease;
     border: 0.01rem solid #ddd;
@@ -153,6 +159,7 @@
 .lang_list a span{}
 
 .hp_list{
+    z-index: 1000;
     /* display: none; */
     height: 0; overflow: hidden; transition: height 0.5s;
     border: 0.01rem solid #ddd; background-color: #fff; 
@@ -162,3 +169,139 @@
 .hp_list li a{}
 .hp_list li a:hover{background-color: #ddf1fc;}
 .hp_list li a span{}
+
+
+
+.Menu{position: relative;}
+.nav{}
+.logo{}
+.logo a{
+    display: block;
+    width: 15%;  height: 80px;
+    background: url(../images/logo.png) no-repeat center left ;
+    /* border: 1px sienna solid; */
+    position: absolute; top: 0; left: 0;
+}
+/* 전체메뉴 공통클래스 */
+.nav{
+    width: 70%; 
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    padding-left: 5rem;
+    z-index: 1;
+}
+.mainMenu{
+    /* border: 1px solid pink; */
+    width: 100%;
+    padding: 0 3rem;
+}
+
+.mainMenu>li{
+    /* border: 1px solid blue; */
+    width: calc(100% / 6);
+}
+.mainMenu>li>a{
+    /* border: 1px solid green; */
+    font-size: 2rem; font-weight: bold;
+    width: 100%; height: 80px;
+    text-align: center;
+    line-height: 80px;
+}
+.mainMenu>li:hover>a{border-bottom: 3px solid #385baa;}
+.mainMenu>li.yd_intro{}
+.mainMenu>li.yd_intro>a{}
+
+.sub_group{
+    position: absolute; left: 0; top: 81px;
+    width: 150rem; height: auto;
+    background-color: #f9f9f9;
+    /* border: 1px solid red; */
+}
+.sub_group01{}
+.sub_group02{}
+.sub_group03{}
+.sub_group04{}
+.sub_group05{}
+.sub_group06{}
+
+/* 메뉴 왼쪽 그림영역 */
+.sub_box{
+    width: 25%; height: auto;
+    /* border: 1px solid aqua; */
+    background: url(img/menuBG2.png) no-repeat center /cover;
+    background-position: 0 0;
+    position: relative;
+}
+.sb_text{position: absolute; top: 30%; left: 5%;color: #fff;}
+.sub_box span{font-size: 2.8rem; font-weight: bold;}
+.sub_box p{
+    margin-top: 4rem;    
+    font-size: 1.6rem;
+    position: relative;
+}
+.sub_box p::before{
+    content: "";
+    background-color: #fff;
+    position: absolute; top: -2rem; left: 0;
+    width: 30px; height: 2px;
+}
+
+.sub_box04{background: url(img/minwon_subbg.png) no-repeat center / 100%; background-position: 0 0;}
+.sub_box06{background: url(img/info_subbg.png) no-repeat center / 100%; background-position: 0 0;}
+
+/* 슬라이드다운 서브메뉴 공통클래스 */
+.subMenu_wrap{
+    width: 100%;
+    flex-wrap: wrap;
+    height: auto;
+    /* border: 1px solid green; */
+}
+.subMenu_wrap>li{
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    /* border: 1px solid red; */
+}
+.subMenu_wrap>li>a{
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    width: auto; height: 5rem; line-height: 5rem;
+    padding: 0 6rem;
+    text-align: center;
+    font-size: 2rem;
+    margin: 0.8rem 2rem;
+}
+.subMenu_wrap>li:hover>a{
+    background: linear-gradient(45deg, rgba(78, 119, 216, 0.8) 0%, rgba(70, 217, 236, 0.8) 100%);
+    color: #fff;
+}
+/* 서브 하위 메뉴 공통클래스 */
+.subUnderMenu{}
+.subUnderMenu ul{}
+.subUnderMenu ul li{padding: 0.5rem 1rem; position: relative;}
+.subUnderMenu ul li::before{
+    content: "";
+    width: 4px; height: 4px; border-radius: 50%;
+    background-color: #062699;
+    position: absolute; top: 50%; left: 12%; transform: translateX(-50%);
+}
+.subUnderMenu ul li a {font-size: 1.8rem; padding-left: 3rem;}
+.subUnderMenu ul li:hover a{color: #28a5de;} 
+
+/* 상단우측아이콘영역 */
+.topIcon_group{
+    position: absolute; top: 0; right: 0;
+    width: 10%; height: 80px; line-height: 80px;
+    /* border: 1px solid #000; */
+}
+.topIcon{width: 100%; height: 100%; text-align: right;}
+.mypage{}
+.mypage a{
+    width: 17px; height: 80px;
+    background: url(img/mypage.png) no-repeat center;
+}
+
+.HB_menu{}
+.HB_menu a{
+    width: 25px; height: 80px;
+    background: url(img/hb_menu.png) no-repeat center;
+}
