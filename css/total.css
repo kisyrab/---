@@ -1,4 +1,6 @@
 @import url('common.css'); /* 공통영역부분 */
 @import url('layout.css'); /* 헤더. 레프트. 푸터 */
 @import url('main.css'); /* 메인 */
+@import url('media.css');
+@import url('sublayout.css');
 @import url('sub.css'); /* 서브 */

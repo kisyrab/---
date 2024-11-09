@@ -1,0 +1,46 @@
+@media (max-width:1580px) {
+    .x_btn{margin: 2% 2% 0 0;}
+    .btnMenu>li{display: block;}
+    .btnSubMenu_wrap{margin: 0 auto;}
+    .btnSubMenu_wrap>li{}
+
+}
+
+
+@media (max-width:1300px) {
+    #header{padding: 0 5rem;}
+    .logo a{left: 4%;}
+    .topIcon_group{right: 4%;}
+    .nav{display: none;}
+    .btnMenu_wrap{margin-top: 80px;}
+
+}
+
+@media (max-width:1110px) {
+    #header{display: none;}
+    .Menu{border-top: 1px solid transparent;}
+    .logo a{width: 40%;}
+    .btnSubMenu_wrap>li>a{padding: 1rem 3rem; font-size: 2rem;}
+    .btnSubUnderMenu ul li a{font-size: 1.7rem;}
+    .btnMenu_wrap{margin-top: 80px;}
+
+}
+
+@media (max-width:650px) {
+    .topIcon_group{width: 20%;}
+    .title{font-size: 4rem; padding: 8rem;}
+    .x_btn{margin: 5% 2% 0 0;}
+    .btnMenu>li>a{font-size: 3rem;}
+    .btnSubMenu_wrap{padding-left: 5%;}
+    .btnSubMenu_wrap>li{width: calc(100% / 2);}
+    .btnSubMenu_wrap>li>a{margin: 2rem 1rem;}
+    .btnSubUnderMenu ul li a{font-size: 1.5rem;}
+
+}
+
+
+@media (max-width:470px) {
+    .title{font-size: 3.5rem; padding: 0; margin: 7rem 0 0 7.5rem;}
+    .btnSubMenu_wrap>li>a{font-size: 1.8rem;}
+    .btnSubUnderMenu ul li a{font-size: 1.3rem;}
+}

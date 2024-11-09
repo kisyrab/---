@@ -9,22 +9,51 @@ a{text-decoration: none; color: #333; display: inline-block;}
     font-family: 'Nanum Gothic';
     font-style: normal;
     font-weight: normal;
-    src: url(font/NanumGothic-Regular.ttf);
+    src: url(font/NanumGothic_0.ttf);
 }
 
 @font-face {
     font-family: 'Nanum Gothic-Bold';
     font-style: normal;
     font-weight: normal;
-    src: url(font/NanumGothic-Bold.ttf);
+    src: url(font/NanumGothicBold_0.ttf);
 }
 
 @font-face {
     font-family: 'Nanum Gothic-ExtraBold';
     font-style: normal;
     font-weight: normal;
-    src: url(font/NanumGothic-ExtraBold.ttf);
+    src: url(font/NanumGothicExtraBold_0.ttf);
 }
+
+@font-face {
+    font-family: 'Yeongdeok-Snow-Crab';
+    font-style: normal;
+    font-weight: normal;
+    src: url(font/Yeongdeok-Snow-Crab.otf);
+}
+
+@font-face {
+    font-family: 'Yeongdeok-Blueroad';
+    font-style: normal;
+    font-weight: normal;
+    src: url(font/Yeongdeok-Blueroad.otf);
+}
+
+@font-face {
+    font-family: 'Yeongdeok-Sea';
+    font-style: normal;
+    font-weight: normal;
+    src: url(font/Yeongdeok-Sea.otf);
+}
+
+@font-face {
+    font-family: 'Yeongdeok-Haeparang';
+    font-style: normal;
+    font-weight: normal;
+    src: url(font/Yeongdeok-Haeparang.otf);
+}
+
 
 body{font-family: "Nanum Gothic", sans-serif; overflow-x: hidden; font-size: 1.3rem; color: #555;}
 

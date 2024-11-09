@@ -51,9 +51,7 @@
 
 .snbLeft a:last-child span::after {display: none;}
 
-.snbRight {width: auto;/*  background-color: rgb(255, 255, 220); */
-    z-index: 100;
-}
+.snbRight {width: auto; z-index: 100;}
 
 .snbRight > div {
     /* border: 1px solid red;  */
@@ -70,13 +68,8 @@
     cursor: pointer;
 }
 .snbRight div:nth-child(odd) a span::after{display: none;} 
-.weather {
-    width: 12rem;
-    text-align: right;
-}
-.weather a{
-    width: 100%; height: 100%;
-}
+.weather {width: 12rem; text-align: right;}
+.weather a{width: 100%; height: 100%;}
 .weather a span{
     display: inline-block;
     position: relative;
@@ -94,9 +87,7 @@
     text-align: center;
     /* border: 1px solid red; */
 }
-.language a{
-    width: 100%; height: 100%;
-}
+.language a{width: 100%; height: 100%;}
 .language a span{
     display: inline-block;
     position: relative;
@@ -173,11 +164,9 @@
 
 
 .Menu{position: relative;}
-.nav{}
 .logo{}
 .logo a{
-    display: block;
-    width: 15%;  height: 80px;
+    width: 15%; height: 80px;
     background: url(../images/logo.png) no-repeat center left ;
     /* border: 1px sienna solid; */
     position: absolute; top: 0; left: 0;
@@ -188,7 +177,7 @@
     /* border: 1px solid red; */
     margin: 0 auto;
     padding-left: 5rem;
-    z-index: 1;
+    z-index: 900;
 }
 .mainMenu{
     /* border: 1px solid pink; */
@@ -212,11 +201,13 @@
 .mainMenu>li.yd_intro>a{}
 
 .sub_group{
+    z-index: 100;
     position: absolute; left: 0; top: 81px;
-    width: 150rem; height: auto;
+    width: 100%; height: auto;
     background-color: #f9f9f9;
     /* border: 1px solid red; */
 }
+
 .sub_group01{}
 .sub_group02{}
 .sub_group03{}
@@ -251,14 +242,12 @@
 
 /* 슬라이드다운 서브메뉴 공통클래스 */
 .subMenu_wrap{
-    width: 100%;
+    width: 100%; height: auto;
     flex-wrap: wrap;
-    height: auto;
     /* border: 1px solid green; */
 }
 .subMenu_wrap>li{
-    padding-left: 1rem;
-    padding-bottom: 1rem;
+    padding: 3rem 1rem 1rem 1rem;
     /* border: 1px solid red; */
 }
 .subMenu_wrap>li>a{
@@ -305,3 +294,110 @@
     width: 25px; height: 80px;
     background: url(img/hb_menu.png) no-repeat center;
 }
+
+/* //햄버거 버튼 눌렀을때 풀 메뉴// */
+
+.btnMenu_wrap{
+    padding: 0 2rem;
+    border-top: #ddd solid 1px;
+    border-left: #ddd solid 1px;
+    border-radius: 15rem 0 0 0;
+    box-shadow: -0.1rem -0.1rem 0.5rem #ddd;
+    background: rgb(6,38,153);
+    background: linear-gradient(320deg, rgb(3, 27, 114) 0%, rgb(2, 66, 131) 100%);
+    opacity: 1;
+    display: none;
+    z-index: 1;
+}
+.title_box{}
+.title{
+    padding: 10rem;
+    color: #fff; font-size: 4.5rem;
+    font-family: 'Yeongdeok-Haeparang';
+    letter-spacing: 1px;
+    /* color: #182150; */
+    margin: 0 auto; 
+}
+
+.x_btn{
+    margin-top: 2rem;
+    width: 2.5rem; height: 2.5rem;
+    background: url(img/X_btn.svg) no-repeat;
+    transition: transform 0.3s ease;
+}
+
+.x_btn:hover {
+    transform: rotate(180deg);
+}
+
+.container{margin: 0 auto;}
+
+.btnMenu{}
+.btnMenu>li{
+    /* border: 1px solid burlywood; */
+    padding: 4rem 0;
+    position: relative;
+}
+
+.btnMenu>li::after{
+    content: "";
+    height: 0.1rem; width: 100%; background-color: #a3a3a385;
+    position: absolute; top: 0; left: 0;
+}
+
+.btnMenu>li:first-child::after{background-color: transparent;}
+
+.btnMenu>li>a{
+    /* border: 1px solid red; */
+    /* border-right: 1px solid #ddd;  */
+    /* width: calc(100% - 130rem);  */padding: 3rem 5rem;
+    font-size: 3.5rem; font-weight: 700;
+    /* color: #182150; */
+    color: #fff;
+    font-family: 'Yeongdeok-Haeparang';
+}
+
+
+
+.btnSubMenu_wrap{flex-wrap: wrap; width: 130rem; /* border: 1px solid green; */}
+.btnSubMenu_wrap>li{width: calc(100% / 4);}
+.btnSubMenu_wrap>li>a{
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    font-size: 2.4rem; font-weight: 700;
+    padding: 1rem 5rem;
+    margin: 3rem 1rem;
+    color: #fff;
+}
+
+.btnSubMenu_wrap>li:hover>a{
+    border-color: transparent;
+    background: linear-gradient(45deg, rgba(78, 119, 216, 0.8) 0%, rgba(70, 217, 236, 0.8) 100%);
+    color: #fff;
+}
+
+.btnSubUnderMenu{}
+.btnSubUnderMenu ul{
+    margin: 0 1rem; padding: 1rem 0; 
+    width: 75%; 
+    /* background-color: #f6f6f6f6;  */
+    border-radius: 1.5rem;
+}
+.btnSubUnderMenu ul li{position: relative;}
+.btnSubUnderMenu ul li::before{
+    content: "";
+    width: 4px; height: 4px; border-radius: 50%;
+    background-color: #062699;
+    background-color: #fff;
+    position: absolute; top: 50%; left: 3.5%; transform: translateX(-50%);
+}
+.btnSubUnderMenu ul li a{
+    /* border: 1px solid orange; */
+    color: #fff;
+    margin: 0 1rem;
+    padding: 1rem;
+    font-size: 2rem;
+    width: 100%;
+}
+
+.btnSubUnderMenu ul li:hover a{text-decoration: underline;}
