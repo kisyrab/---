@@ -12,7 +12,7 @@
     .logo a{left: 4%;}
     .topIcon_group{right: 4%;}
     .nav{display: none;}
-    .btnMenu_wrap{margin-top: 80px;}
+    /* .btnMenu_wrap{margin-top: 80px;} */
 
 }
 
@@ -20,9 +20,10 @@
     #header{display: none;}
     .Menu{border-top: 1px solid transparent;}
     .logo a{width: 40%;}
+    .btnSubMenu_wrap>li{width: calc(100% / 3); padding-left: 5%;}
     .btnSubMenu_wrap>li>a{padding: 1rem 3rem; font-size: 2rem;}
     .btnSubUnderMenu ul li a{font-size: 1.7rem;}
-    .btnMenu_wrap{margin-top: 80px;}
+    /* .btnMenu_wrap{margin-top: 80px;} */
 
 }
 

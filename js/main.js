@@ -126,3 +126,9 @@ $(document).ready(function() {
 //         }, 500); // 트랜지션 시간과 동일하게 설정
 //     });
 // });
+
+function toggleNav(event) {
+    event.preventDefault();
+    const nav = document.getElementById('quickMenu');
+    nav.classList.toggle('collapsed');
+}

@@ -28,10 +28,10 @@
 #header {border-bottom: 1px solid #ddd;}
 
 .snbWrap {
-    /* border: 1px solid red; */
     height: 5rem;
     line-height: 5rem;
     font-size: 1.6rem;
+    margin: 0 5rem;
 }
 
 .snbLeft {width: 38rem;}
@@ -131,6 +131,7 @@
     width: 100%; height: 100%;
 }
 .homepage a span{
+    /* border: 1px solid greenyellow; */
     display: inline-block;
     position: relative;
     width: 100%; height: 100%;
@@ -163,13 +164,13 @@
 
 
 
-.Menu{position: relative;}
+.Menu{position: static;}
 .logo{}
 .logo a{
-    width: 15%; height: 80px;
+    width: 143px; height: 80px;
     background: url(../images/logo.png) no-repeat center left ;
     /* border: 1px sienna solid; */
-    position: absolute; top: 0; left: 0;
+    position: absolute; top: 5.1rem; left: 5rem;
 }
 /* 전체메뉴 공통클래스 */
 .nav{
@@ -202,7 +203,7 @@
 
 .sub_group{
     z-index: 100;
-    position: absolute; left: 0; top: 81px;
+    position: absolute; left: 0; top: 130px;
     width: 100%; height: auto;
     background-color: #f9f9f9;
     /* border: 1px solid red; */
@@ -223,7 +224,7 @@
     background-position: 0 0;
     position: relative;
 }
-.sb_text{position: absolute; top: 30%; left: 5%;color: #fff;}
+.sb_text{position: absolute; top: 30%; left: 5%; color: #fff;}
 .sub_box span{font-size: 2.8rem; font-weight: bold;}
 .sub_box p{
     margin-top: 4rem;    
@@ -278,7 +279,7 @@
 
 /* 상단우측아이콘영역 */
 .topIcon_group{
-    position: absolute; top: 0; right: 0;
+    position: absolute; top: 5.1rem; right: 5rem;
     width: 10%; height: 80px; line-height: 80px;
     /* border: 1px solid #000; */
 }
@@ -304,10 +305,12 @@
     border-radius: 15rem 0 0 0;
     box-shadow: -0.1rem -0.1rem 0.5rem #ddd;
     background: rgb(6,38,153);
-    background: linear-gradient(320deg, rgb(3, 27, 114) 0%, rgb(2, 66, 131) 100%);
+    background: linear-gradient(320deg, rgb(3, 27, 114) 0%, rgb(8, 86, 163) 100%);
     opacity: 1;
     display: none;
     z-index: 1;
+    width: 100%;
+    position: absolute; top: 130px; left: 0;
 }
 .title_box{}
 .title{
