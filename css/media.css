@@ -14,22 +14,60 @@
     .nav{display: none;}
     /* .btnMenu_wrap{margin-top: 80px;} */
 
+    /* 메인검색창 */
+    .search{top: 45%;}
+    .popular{display: none;}
+    .quickMenu{top: 50%;}
 }
 
 @media (max-width:1110px) {
     #header{display: none;}
-    .Menu{border-top: 1px solid transparent;}
-    .logo a{width: 40%;}
+    .Menu{}
+    .logo a{top: 1rem; }
+    .topIcon_group{top: 1rem;}
+    .btnMenu_wrap{top: 100px;}
     .btnSubMenu_wrap>li{width: calc(100% / 3); padding-left: 5%;}
     .btnSubMenu_wrap>li>a{padding: 1rem 3rem; font-size: 2rem;}
     .btnSubUnderMenu ul li a{font-size: 1.7rem;}
     /* .btnMenu_wrap{margin-top: 80px;} */
 
+
+    /* 메인검색창 */
+
+    .s01_bg{
+        border-radius: 2rem;
+        margin: 0 4.5rem;
+        margin-top: 10rem;
+        height: 50rem; 
+        background-size: cover;
+    }
+    #search{min-width: 45rem;}
+    .search{top: 30%;}
+    .sanhoPink{display: none;}
+    .sanhoBlue{display: none;}
+    .quickMenu{
+        /* border: 1px solid red; */
+        flex-wrap: wrap;
+        padding: 1rem;
+        top: 40%;
+        width: 100%;
+    }
+    
+    .Qitem_wrap{
+        /* border: 3px solid yellow; */
+        margin-bottom: 2rem;
+        width: calc(100% / 4 - 1rem);
+        padding: 0;
+    }
+    .Qmenu_item{margin: 0 auto;}
+    
+    .more_btn{display: none;}
+
 }
 
 @media (max-width:650px) {
     .topIcon_group{width: 20%;}
-    .title{font-size: 4rem; padding: 8rem;}
+    .title{font-size: 4rem; padding: 9rem 1rem 8rem 5rem;}
     .x_btn{margin: 5% 2% 0 0;}
     .btnMenu>li>a{font-size: 3rem;}
     .btnSubMenu_wrap{padding-left: 5%;}
@@ -37,11 +75,50 @@
     .btnSubMenu_wrap>li>a{margin: 2rem 1rem;}
     .btnSubUnderMenu ul li a{font-size: 1.5rem;}
 
+    /* 메인검색창 */
+    .s01_bg{
+        background-size: cover;
+        margin-top: 10rem;
+        border-radius: 2rem;
+    }
+    #search{min-width: 36rem;}
+    #search::placeholder{
+        font-size: 2.5rem;
+    }
+    .crab_btn a{background-size: 85%; right: -4rem; top: -4.5rem;}
+    .quickMenu{padding: 0;}
+    .Qitem_wrap{
+        margin: 0 ;
+        width: calc(100% / 4 - 1.75rem);
+    }
+    /* .Qitem_wrap:first-child{margin-left: 0;} */
+    /* .Qitem_wrap:nth-child(5){margin-left: 0;} */
+    .Qmenu_item{
+        width: 100%; height: 8.5rem;
+        padding: 1rem; margin: 1rem 0;
+    }
+    .Qmenu_icon{width: 75%; height: 75%; padding: 0.1rem; }
+    .Qmenu_text{font-size: 1.1rem; }
+
 }
 
 
 @media (max-width:470px) {
-    .title{font-size: 3.5rem; padding: 0; margin: 7rem 0 0 7.5rem;}
+    .title{ font-size: 3.5rem; padding: 0; margin: 7rem 0 0 8rem;}
     .btnSubMenu_wrap>li>a{font-size: 1.8rem;}
     .btnSubUnderMenu ul li a{font-size: 1.3rem;}
+
+    .search{top: 20%;}
+    #search{ min-width: 25rem;}
+    #search::placeholder{font-size: 2rem; text-align: center; padding: 0;}
+    .crab_btn a{display: none;}
+    .quickMenu{top: 30%;}
+    .Qitem_wrap{width: calc(100% / 2 - 1rem);}
+    .Qmenu_item{
+        width: 7rem; height: 7rem;
+        padding: 0.5rem;
+    }
+    .Qmenu_icon{width: 70%; height: 70%; padding: 0.1rem; }
+    .Qmenu_text{font-size: 1rem; }
+
 }
